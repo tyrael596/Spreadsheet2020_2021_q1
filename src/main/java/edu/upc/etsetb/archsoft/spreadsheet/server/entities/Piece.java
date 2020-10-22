@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edu.upc.etsetb.archsoft.spreadsheet.server.chess.entities;
+package edu.upc.etsetb.archsoft.spreadsheet.server.entities;
 
 /**
  *
  * @author Alex
  */
-public class Bishop {
-
+public interface Piece {
+    
 }

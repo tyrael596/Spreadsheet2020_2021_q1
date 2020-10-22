@@ -9,6 +9,6 @@ package edu.upc.etsetb.archsoft.spreadsheet.server.chess.entities;
  *
  * @author Alex
  */
-public class Rook extends ChessPiess{
+public class Rook extends ChessPiece {
     
 }

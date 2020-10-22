@@ -5,6 +5,7 @@
  */
 package edu.upc.etsetb.archsoft.spreadsheet.server.chess.entities;
 
+import edu.upc.etsetb.archsoft.spreadsheet.server.entities.Piece;
 import java.util.Vector;
 
 
@@ -12,7 +13,7 @@ import java.util.Vector;
  *
  * @author Alex
  */
-public abstract class ChessPiece {
+public abstract class ChessPiece implements Piece  {
     int ro;
     int co;
     boolean color; // White or black 
