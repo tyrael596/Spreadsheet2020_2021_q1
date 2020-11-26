@@ -16,12 +16,16 @@ import java.util.Vector;
 public abstract class ChessPiece implements Piece  {
     int ro;
     int co;
-    boolean color; // White or black 
+    int color; // Black=0 White=1 more colors? We'll see
     int p;
     boolean dead; // Status dead or alive   
     
-    public abstract void isPieceMovement(int ro, int co, int rd, int cd) throws NoPieceMovementException; 
+    public abstract void isPathFree(int ro, int co, int rd, int cd, ChessBoard board) /*throws NoPathFreeException*/;
+    public abstract void isPieceMovement(int ro, int co, int rd, int cd) /* throws NoPieceMovementException */; 
     abstract public Vector getMovements(int ro, int co, ChessBoard board);
+    public int getColor(){ 
+        return co;
+    };
     
     
 }
